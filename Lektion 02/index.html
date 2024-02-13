@@ -71,8 +71,43 @@
         <!-- _blank == nytt fönster/tab, _top == samma fönster/tabb  -->
         <a href="https://google.com" target="_blank">Länk till Google</a><br>
         <a href="#special">Här kan du läsa om specialtecken!</a>
-
     </p>
+
+    <h2>Elementtyper</h2>
+    <div>
+        <p>
+        En &lt;p&gt;-tagg är ett block-element. 
+        </p>
+        <p>
+            - börjar alltid med en ny rad<br>
+            - de har padding (utrymme)<br>
+            - tar hela bredden<br>
+            - vi kan "styla om dem" - ändra bredd och höjd.
+        </p>
+        <p>Det finns också något som heter <strong>inline</strong>-element. Ett annat element som är inline är "span". Det kan man sätta <span>runt text.</span></p>
+    </div>
+
+    Hejsan<p style="background-color: lightseagreen">Svejsan</p>
+
+    <div style="height: 200px; width: 50px; background-color: lightsalmon">&nbsp;</div>
+
+    <h2>Exempel på Semantik</h2>
+
+    <div style="background-color: pink">
+        <h1><a href="/">Min Sida</a></h1>
+        <div style="background-color: lightblue">
+            <a href="sida1.html">Min Sida</a> | <a href="sida2.html">Sida 2</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <header>
+        <h1><a href="/">Min Sida med Semantik</a></h1>
+        <nav>
+            <a href="sida1.html">Min Sida</a> | <a href="sida2.html">Sida 2</a>
+        </nav>
+    </header>
 
 </body>
 </html>
