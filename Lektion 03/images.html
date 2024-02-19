@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS: Images, Media and Lists</title>
+</head>
+<body>
+
+    <h1>HTML &amp; CSS: Images, Media and Lists</h1>
+
+    <h2>Images</h2>
+    <p>
+        <img
+            src="img/photo.jpeg"
+            alt="Martin with a rubber duck and shades"
+        >
+    </p>
+    <p>
+        <img
+            src="img/photo.jpeg"
+            alt="Martin with a rubber duck and shades"
+            width="200"
+        >
+    </p>
+    
+    <figure>
+        <img src="img/photo.jpeg" alt="Martin with his duck!" style="width:25%">
+        <figcaption>Bildtext - Martin med en anka!</figcaption>
+    </figure>
+
+    <h2>Media</h2>
+
+    <h3>Video</h3>
+
+    <video controls width="200" >
+        <!-- autoplay -->
+        <source src="video/video.mp4" type="video/mp4">
+        <p>Din webbläsare stödjer inte formatet av videon. 😭</p>
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="audio/audio.mp3" type="audio/mp3">
+        <p>Din webbläsare stödjer inte formatet av ljudklippet. 😭</p>
+    </audio>
+
+    <h3>Object</h3>
+    <object data="data/Kursplanering HTML och CSS.pdf" type="application/pdf">
+        <p>Din webbläsare stödjer inte formatet av PDF:en. 😭</p>
+    </object>
+    
+    <h4>Embedded</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EjP1oa_P9CA?si=jslwHuFEvAIVYknQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Lists</h2>
+
+    <h3>Ordered List (sortedade listor)</h3>
+
+    <ol type="1" start="100" reversed>
+        <!-- ordered list -->
+        <!-- reversed start="X" type="1, a, B, i I" -->
+        <li>Första elementet</li>
+        <li>Sista elementet</li>
+        <li>Nej, detta är det sista elementet</li>
+    </ol>
+
+    <h3>Unordered list (osorterad lista)</h3>
+    <ul>
+        <li>Första elementet</li>
+        <li>Andra elementet</li>
+        <li>osv...</li>
+    </ul>
+
+    <h3>Descriptive list (beskrivande lista)</h3>
+
+    <dl>
+        <dt><strong>Vad är era öppettider?</strong></dt>
+        <dd><i>Vi har öppet vardagar mellan 11:00 - 13:47.</i></dd>
+        <dt>Får man ta kaninen med sig?</dt>
+        <dd><i>Ja, det går bra, sålänge hen har munkorg. </i></dd>
+    </dl>
+
+
+</body>
+</html>
