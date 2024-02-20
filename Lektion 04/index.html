@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS: Tabeller och formulär</title>
+</head>
+<body>
+    <h1>HTML &amp; CSS: Tabeller och formulär</h1>
+    
+    <h2>Tabeller</h2>
+
+    <table>
+        <caption>Detta är en exempel tabell</caption>
+        <tr>
+            <th>Placering</th>
+            <th>Spelare</th>
+            <th>Poäng</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><span style="color: blue;">Martin</span></td>
+            <td>2430</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td style="color: gold;">Elvira</td>
+            <td>2429</td>
+        </tr>
+    </table>
+
+
+    <table style="
+                    border: 1px solid lightseagreen;
+                    width: 100%;
+                ">
+        <!-- border="1" -->
+        <thead>
+            <tr>
+                <th style="text-align: left">Tillverkare</th>
+                <th>Modell</th>
+                <th style="width: 30%; text-align: right;">Max hastighet (km/h)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Suzuki</td>
+                <td style="text-align: center;">Samurai</td>
+                <td style="text-align: right;">85</td>
+            </tr>
+            <tr>
+                <td>Volvo</td>
+                <td style="text-align: center;">XC90</td>
+                <td style="text-align: right;">220</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" style="font-weight: bold;">Snitt</td>
+                <td style="text-align: right;">152,5</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h3>Formulär</h3>
+
+    <form > <!-- action="" -->
+
+        <div>
+            <label for="name" style="display: inline-block; width: 100px">Namn</label>
+            <input id="name" name="name" type="text" value="">
+        </div>
+
+        <div style="padding-top: 10px;">
+            <label for="password" style="display: inline-block; width: 100px">Lösenord</label>
+            <input id="password" name="password" type="password">
+        </div>
+
+        <div>
+            <label for="adress" style="display: block;">Adress</label>
+            <textarea rows="5" id="adress" name="adress"></textarea>
+        </div>
+
+        <div>
+            <label for="color" style="display: block;">Favorit färg</label>
+            <select id="color" name="color">
+                <option></option>
+                <option value="red">Röd</option>
+                <option value="blue">Blå</option>
+                <option value="green" selected>Grön</option>
+            </select>
+
+        </div>
+
+        <div>
+            Favorit smak<br>
+            <label for="mint">Mint</label>
+            <input type="radio" name="favTaste" id="mint">
+            <label for="chocholate">Chocklad</label>
+            <input type="radio" name="favTaste" id="chocholate">
+
+        </div>
+
+        <div>
+            <label for="privacy">Privacy Policy</label>
+            <input type="checkbox" id="privacy" name="privacy">
+            <label for="newsletter">Nyhetsbrev</label>
+            <input type="checkbox" id="newsletter" name="newletter">
+        </div>
+
+        <div>
+
+            <input type="button" value="Tryck på mig" id="knapp1" name="knapp1">
+
+            <button id="knapp2" name="knapp2">Tryck på mig! 🤠
+
+                <strong>Woo!</strong>
+
+                <img src="../Lektion 03/img/photo.jpeg" alt="Martin med ankan!">
+            </button>
+            <br>
+            <label for="minFil">Välj ditt CV:</label>
+            <input type="file" name="minFil" id="minFil">
+
+        </div>
+
+
+    </form>
+
+</body>
+</html>
