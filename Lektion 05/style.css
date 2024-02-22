@@ -1,0 +1,84 @@
+
+/*
+    Här skriver jag min CSS-kod. 
+
+    Detta är "extern" css eller en "extern" stilmall. Bra!
+*/
+
+.green {
+    color: green;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#mittBlåBlock {
+    background-color: lightblue;
+    color: #ffffff;  /* #ffffff = white */
+    text-align: center;
+    padding: 20px 0 20px 0; 
+    font-weight: bolder;
+
+}
+
+.spacer {
+    padding: 25px 0 25px 0;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    color: lightseagreen;
+    text-align: center;
+}
+
+input[type="text"][type="submit"] {
+
+}
+
+h1 + p {
+    color: pink;
+}
+
+form > label {
+    font-style: italic;
+}
+
+
+a {
+    font-weight: 200;
+}
+
+a:link {
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+a:visited {
+    color: lightsalmon;
+    font-weight: 100;
+}
+
+a:hover {
+    color: black;
+}
+
+
+
+/*
+p:first-child {
+    color: lightsteelblue;
+}
+*/
+
+p:first-of-type {
+    color: lime;
+}
+/*
+p:nth-child(even) {
+    color: lime;
+}
+*/
