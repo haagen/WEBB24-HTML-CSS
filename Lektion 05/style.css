@@ -82,3 +82,18 @@ p:nth-child(even) {
     color: lime;
 }
 */
+
+
+li {
+    /*
+    font-size: 1.5em;
+    */
+    font-size: 1.5rem;
+}
+
+.boxStyle {
+    margin: 0 auto;
+    width: 50vw;
+    height: 4rem;
+    background-color: red;
+}
