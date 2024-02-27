@@ -1,0 +1,70 @@
+
+body {
+    margin: 0;
+}
+
+#static {
+    background-color: lightpink;
+    width: 200px;
+}
+
+#relative {
+    background-color: lightcyan;
+    position: relative;
+    width: 200px;
+    top: -40px;
+    left: 50px;
+    /*
+    bottom
+    right
+    */
+}
+
+#absolute {
+    background-color: lightgreen;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    text-align: center;
+}
+
+.spacer {
+    height: 100vh;
+    background-color: violet;
+}
+
+#fixed {
+    background-color: #90ee90;
+    position: fixed;
+    top: 125px;
+    left: 125px;
+    z-index: 1000;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    font-size: 0.8rem; 
+    padding: 10px;
+    position: fixed; 
+    bottom: 0; 
+    right: 0;
+    left: 0;
+    
+}
+
+#blog {
+    height: 100vh; 
+}
+
+#submenu {
+    /* 
+    background: url('mountain.jpeg');
+    background-size: 100%; 
+    */
+    height: 200px;
+    position: sticky;
+    top: 50px;
+    left: 0; 
+}
