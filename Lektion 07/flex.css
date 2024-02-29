@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+#container { /* Förälder */
+    background-color: lightgray;
+
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    /*
+        flex-start, flex-end, space-around, space-between
+    */
+    justify-content: space-evenly;
+    /*
+        stretch, flex-start, flex-end, center (baseline)
+    */
+    align-items: stretch;
+    /*
+        wrap, wrapreverse, nowrap
+    */  
+    flex-wrap: wrap;
+
+    /* row, row-reverse, column, column-reverse */
+    flex-direction: column;
+
+}
+
+#container > div {
+    min-width: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#objekt1 {
+    background-color: lightseagreen;
+    /* order: 1; */
+}
+
+#objekt2 {
+    background-color: pink;
+    /* order: 3; */
+}
+
+#objekt3 {
+    background-color: purple;
+    /* order: 2; */
+}
