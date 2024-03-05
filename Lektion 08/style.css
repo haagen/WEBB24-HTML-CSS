@@ -68,16 +68,16 @@
     */
     background-repeat: no-repeat;
 
-    /* overflow-y: auto; */
+    overflow-y: auto;
 
     max-width: 800px;
     height: 400px;
     margin: 0 auto;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end; 
+    align-items: flex-end;  */
     color: lightseagreen;
 }
 
@@ -87,6 +87,37 @@
 
 
 #textExample {
-    font-family: "Ubuntu", "Fuggles", sans-serif;
-    font-size: 4rem;
+    /* font-family: "Ubuntu", "Fuggles", sans-serif;
+    font-size: 14rem; */
+
 }
+
+#textExample > p {
+    /* text-indent: 10px; */
+    /* uppercase, lowercase, capitalize */
+    /* text-transform: capitalize; */
+    text-align: justify;
+    width: 20%
+}
+
+li {
+    /* list-style-image: url('icon.jpg'); */
+    list-style: none;
+    background-image: url('icon.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin: 0;
+    padding: 8px 0px 3px 35px;
+
+}
+
+ul > li > ul {
+    padding: 10px;
+}
+
+ul > li > ul > li {
+    list-style: none;
+    background-image: none;
+    padding-left: 0px;
+}
+
