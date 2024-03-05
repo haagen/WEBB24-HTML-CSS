@@ -1,0 +1,92 @@
+
+
+@import url('https://fontsx.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+@font-face {
+    font-family: "Fuggles";
+    src: local("Fuggles"), url("Fuggles/Fuggles-Regular.ttf")
+}
+
+
+#exempel1 {
+    color: lime;
+    background-color: black;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+}
+
+#exempel2 {
+    /* background-color: rgb(32, 178, 170); */
+    background-color: rgb(25, 93, 188);
+}
+
+#exempel3 {
+    background-color: #025955;
+}
+
+#exempel4 {
+    background-color: hsl(234, 56%, 78%);
+}
+
+#childBox1 {
+    position: relative;
+    background-color: red;
+}
+
+#childBox2 {
+    position: relative;
+    /* background-color: blue;
+    opacity: 0.5; */
+
+    background-color: rgba(0, 0, 255, 0.5);
+    top: -25px;
+    
+}
+
+#backgroundDiv {
+    background-image: url("jeep.jpeg");
+    background-color: #909090;
+    /*
+        contain, cover, <no> <no>, auto
+    */
+    background-size: contain;
+    /*
+        top, center, bottom, <no> <no>
+    */
+    background-position: top;
+    /*
+        scroll, fixed, local
+    */
+    background-attachment: local;
+
+    /*
+        repeat, no-repeat, repeat-x, repeat-y 
+    */
+    background-repeat: no-repeat;
+
+    /* overflow-y: auto; */
+
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    color: lightseagreen;
+}
+
+.spacer {
+    height: 1000px;
+}
+
+
+#textExample {
+    font-family: "Ubuntu", "Fuggles", sans-serif;
+    font-size: 4rem;
+}
