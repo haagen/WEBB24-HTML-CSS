@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: lightseagreen;
+}
+
+h2 {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+#hero {
+    background-image: url('img/kansai-university-84363_1280.jpg');
+    max-width: 800px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+article {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 500px) {
+    article {
+        width: 50%;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}

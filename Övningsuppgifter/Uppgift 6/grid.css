@@ -1,0 +1,50 @@
+
+body {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "titel meny meny"
+        "sektion1 sektion2 sektion3"
+        "fot fot fot"
+    ;
+
+    max-width: 50rem;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background-color: lightseagreen;
+    grid-area: titel;
+}
+
+nav {
+    background-color: lightsalmon;
+    grid-area: meny;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#section1 {
+    background-color: lightgreen;
+    grid-area: sektion1;
+}
+
+#section2 {
+    background-color: lightgray;
+    grid-area: sektion2;
+}
+
+#section3 {
+    background-color: lightblue;
+    grid-area: sektion3;
+}
+
+footer {
+    background-color: lightyellow;
+    grid-area: fot;
+}
