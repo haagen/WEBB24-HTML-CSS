@@ -1,0 +1,17 @@
+:root {
+    --main-color: #247432;
+    --max-width: 350px;
+    --my-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    font-family: var(--my-font);
+}
+
+p {
+    max-width: var(--max-second-width, 500px);
+}
+
+.highlight {
+    color: var(--main-color);
+}

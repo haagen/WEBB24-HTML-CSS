@@ -1,0 +1,66 @@
+:root {
+    --bgcolor: black;
+    --color: white;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--bgcolor, #000000);
+    color: var(--color, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#col2 {
+    width: 15rem;
+}
+
+a {
+    color: var(--color, #FFFFFF);
+    text-decoration: none;
+}
+
+.linkedInList a:hover {
+    color: #0072b1;
+}
+
+.mastoList a:hover {
+    color: #4c19bb;
+}
+
+.facebookList a:hover {
+    color: #3b5998;
+}
+
+.youtubeList a:hover {
+    color: #ff0000;
+}
+
+@media screen and (min-width: 900px) {
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+
+}
